@@ -3,9 +3,10 @@
 
 ## 软件依赖配置
 
+
 ### 通用依赖
 
-```
+```bash
 sudo apt install -y git vim build-essential htop wget
 ```
 
@@ -76,7 +77,7 @@ roscd roborts_bringup/scripts/udev
 
 > [!Note]
 >
-> 例程模式适用rplidar a2作为激光雷达传感器，如替换其他传感器，请修改对应参数。
+> 例程适用rplidar a2作为激光雷达传感器，如替换其他传感器，请修改对应参数。
 
 1. 启动SLAM演示
 
@@ -94,6 +95,7 @@ roslaunch roborts_bringup roborts_slam.launch
 > 可以使用[map_server](http://wiki.ros.org/map_server#map_saver)将建好的地图(pgm和yaml)保存下来, 放入`roborts_bringup`包的map文件夹中，提供给`roborts_localization`包使用。
 
 2. 启动已知地图的导航演示
+
 ```bash
 #需要Rviz
 roslaunch roborts_bringup roborts_with_rviz.launch
