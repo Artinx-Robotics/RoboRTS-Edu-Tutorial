@@ -3,9 +3,7 @@
 
 ## 软件依赖配置
 
-### 通用依赖
-
-```
+```bash
 sudo apt install -y git vim build-essential htop
 ```
 
