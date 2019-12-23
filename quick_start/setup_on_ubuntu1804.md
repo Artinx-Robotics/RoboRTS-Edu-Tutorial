@@ -64,7 +64,7 @@ source devel/setup.bash
 ```bash
 #source roborts_ws/devel/setup.bash
 roscd roborts_bringup/scripts/udev
-./create_ude_rules.sh
+./create_udev_rules.sh
 ```
 
 脚本会自动复制`roborts_bringup/scripts/udev`文件夹中的`roborts.rules`到`/etc/udev/rules.d`， 并重新加载和启动`udev`。配置成功后需要重新插拔相关的usb插口。
