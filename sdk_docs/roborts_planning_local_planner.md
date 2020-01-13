@@ -145,6 +145,18 @@ rosrun roborts_planning teb_test
 
 * C. Rösmann, F. Hoffmann and T. Bertram: Integrated online trajectory planning and optimization in distinctive topologies, Robotics and Autonomous Systems, Vol. 88, 2017, pp. 142–153.
 
+### 运动模型支持
+
+默认参数为Holonomic模型，如使用diff_drive，需调节以下参数：
+
+* `max_vel_y`: 0
+* `acc_lim_y`: 0
+* `min_turning_radius`: 0
+* `weight_max_vel_y`: 0
+* `weight_acc_lim_y`: 0
+* `weight_kinematics_nh`: 1000
+* `weight_kinematics_turning_radius`: 0
+
 ### 相关参数
 
 #### 轨迹相关
