@@ -73,6 +73,13 @@ roscd roborts_bringup/scripts/udev
 >
 > 关于udev的配置，可以参考这篇[教程](https://www.clearpathrobotics.com/assets/guides/ros/Udev%20Rules.html)
 
+## (无需配置) 默认独立IMU设置
+
+```bash
+RM+QAS1
+RM+AMU0
+```
+
 ## 运行例程
 
 > [!Note]
